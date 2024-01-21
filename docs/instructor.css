@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&family=Raleway:wght@100;300;400;600&display=swap');
+
+:root {
+    --panel-color: hsla(252, 0%, 83%, 1);
+    --panel-text-color: black;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+#everything {
+    min-height: 81vh;
+}
+
+#placeholder {
+    margin-bottom: 60px;
+    color: blue;
+}
+
+body {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.underline {
+    display: inline;
+    position: relative;
+}
+
+.underline::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 1.5s;
+}
+
+.underline.animate::after {
+    width: 100%;
+}
+
+
+#title-h1 {
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    font-size: 112px;
+    text-align: center;
+}
+
+.paragraph {
+    text-align: center;
+}
+
+.margin-top-50 {
+    margin-top: 50px;
+}
+
+.paragraph > h6 {
+    display: inline;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+}
+
+.paragraph > p {
+    display: inline;
+    text-align: center;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    text-wrap: wrap;
+}
+
+.screenshots {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.dashboard-screenshot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.dashboard-screenshot > img {
+    max-width: 50em;
+}
+
+.dashboard-screenshot > p {
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    text-wrap: nowrap;
+}
+
+#individual-ss {
+    margin-top: 40px;
+}
+
+#last-para {
+    margin-bottom: 50px;
+}
+
+
+
+@media (max-width: 480px) {
+    #img-col {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    #img-col > img {
+        max-width: 150px;
+        margin: 20px 0px 20px 0px;
+    }
+    #google-form {
+        display: none;
+    }
+}
+
+@media (max-width: 580px) {
+    #title-h1 {
+        font-size: 50px;
+    }
+}
+
+
+
+@media (max-width: 950px) {
+    .dashboard-screenshot {
+        display: none;
+    }
+}
+
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes underlineAnimation {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
