@@ -12,7 +12,7 @@
 #everything {
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
-    min-height: 81vh;
+    min-height: 83vh;
 }
 
 #title-h1 {

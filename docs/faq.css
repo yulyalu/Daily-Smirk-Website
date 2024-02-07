@@ -7,7 +7,7 @@
 }
 
 #everything {
-    min-height: 81vh;
+    min-height: 83vh;
 }
 
 body {
@@ -17,7 +17,6 @@ body {
 
 #placeholder {
     margin-bottom: 60px;
-    color: blue;
 }
 
 #title-h1 {
